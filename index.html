@@ -1,0 +1,279 @@
+<?php
+require "src/scripts/db_connect.php";
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+    rel="stylesheet" />
+
+  <!-- global css -->
+  <link rel="stylesheet" type="text/css" href="src/css/flickity.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/flickity-fade.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+
+  <!-- adaptive -->
+  <link rel="stylesheet" type="text/css" href="src/css/media.css" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="bg"></div>
+
+    <div id="header" class="content">
+      <nav class="nav">
+        <a href="" class="link" id="linkAbout" data-hover=true>О нас</a>
+        <a href="" class="link" id="linkEvents" data-hover=true>Мероприятия</a>
+        <a href="" class="link" id="logo">
+          <div class="logo">
+            <img src="src\img\logo.png" width="100%" />
+          </div>
+        </a>
+        <a href="" class="link" id="linkGallery" data-hover=true>Галерея</a>
+        <a href="" class="link" id="linkDemo" data-hover=true>Отправка демо</a>
+
+      </nav>
+
+      <nav class="mobile-nav">
+        <div class="mobile-content">
+          <a href="#" class="logo">
+            <div>
+              <img src="src\img\logo.png" width="100%" />
+            </div>
+          </a>
+
+          <button id="showMenu">
+            <span></span>
+          </button>
+          
+        </div>
+
+        <div class="menu">
+          <div class="content">
+            <a href="#" class="mobile-link" id="mobileGallery">Галерея</a>
+            <a href="#" class="mobile-link" id="mobileEvents">Мероприятия</a>
+            <a href="#" class="mobile-link" id="mobileDemo">Отправка демо</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="title">
+        <div class="title-content">
+          <div class="bg"></div>
+          <div class="bg-blur"></div>
+
+          <h1>Atyrau Music Community</h1>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="container">
+          <div class="bottom-content">
+
+            <!-- bottom-content  -  start -->
+            <div class="social-media">
+              <!-- <a href="#" title="soundcloud"><img src="src\img\soundcloud.svg" alt="soundcloud" /></a> -->
+              <a href="#" title="spotify"><img src="src\img\spotify.svg" alt="spotify" /></a>
+              <a href="https://t.me/atyraumusiccommunity" title="telegram"><img src="src\img\telegram.svg" alt="telegram" /></a>
+              <a href="https://www.instagram.com/atyraumusiccommunity/" title="instagram"><img src="src\img\instagram.svg" alt="instagram" /></a>
+            </div>
+
+            <div class="rights">
+              <p><span>AMC</span> © 2023 ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+            </div>
+          </div>
+          <!-- bottom-content  -  end -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="animaline">
+      <div class="dot"></div>
+    </div>
+  </header>
+
+  <section id="section">
+    <div class="about-us" id="about">
+      <div class="container">
+
+        <h1 class="section-title">О нас</h1>
+
+        <div class="content">
+          <h2>who we are?</h2>
+          <p>AMC - место, где любители музыки нашего города могут собраться вместе и поделиться своим творчеством,
+            идеями и опытом. Мы создали это сообщество для того, чтобы объединить всех, кто увлечен музыкой - от
+            начинающих музыкантов до профессионалов. Здесь вы сможете общаться с другими музыкантами, получать обратную
+            связь на свое творчество, а также найти вдохновение для новых проектов. Мы верим, что музыка может
+            объединить людей, и наша цель - создать площадку для того, чтобы каждый мог найти свое место в музыкальном
+            мире. Присоединяйтесь к нашему сообществу и вместе мы создадим музыку, которая вдохновит мир!</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <div class="container">
+
+        <div class="gallery-content">
+          <h1 class="section-title">Галерея</h1>
+
+          <div class="flex-block">
+            <div class="left">
+              <div class="preview first active">
+                <img src="src/img/events/first.jpg" alt="" class="img" />
+              </div>
+              <div class="preview second">
+                <img src="src/img/events/second.jpg" alt="" class="img" />
+              </div>
+              <div class="preview third">
+                <img src="src/img/events/third.jpg" alt="" class="img" />
+              </div>
+              <div class="preview fourth">
+                <img src="src/img/events/fourth.jpg" alt="" class="img" />
+              </div>
+              <div class="preview fifth">
+                <img src="src/img/events/fifth.jpg" alt="" class="img" />
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="main">
+                <img src="src/img/events/first.jpg" alt="" class="main-img" />
+              </div>
+              <div class="text"></div>
+            </div>
+          </div>
+
+          <div class="main-carousel" id="carousel">
+            <div class="carousel-cell">
+              <img src="src/img/events/first.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+              <img src="src/img/events/second.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+              <img src="src/img/events/third.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+              <img src="src/img/events/fourth.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+              <img src="src/img/events/fifth.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="events" id="events">
+      <div class="section-title">Мероприятия</div>
+      <div class="container">
+        <div class="events-content">
+          <div class="yemaa">
+            <img src="src/img/yemaa.svg" alt="" />
+            <span></span>
+          </div>
+
+          <div class="text">
+            <p>Каждые две недели во вторник устраиваем собрание музыкантов для прослушивания демо и релизов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="demo" id="demo">
+        <h1>
+          <span class="space">contact</span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          cum veniam, harum reiciendis voluptatibus ipsa nemo iste eveniet
+          natus, molestiae maiores impedit? Cupiditate doloremque tempore
+          eveniet quisquam harum repellendus! Accusamus.
+        </h1>
+
+        <div class="demo-content">
+          <form action="src/scripts/upload.php" method="post" class="demo-form" enctype=multipart/form-data>
+            <?php if (isset($_GET['error'])) { ?>
+              <p>
+                <?= $_GET['error'] ?>
+              </p>
+              <?php
+            }
+            ?>
+
+            <input type="text" name="nick" id="" placeholder="Псевдоним" required>
+            <div id="file-drop-area">
+              <input type="file" name="my_audio" id="file-input" multiple required />
+              <label for="file-input">перетащите файлы сюда или нажмите, чтобы загрузить</label>
+            </div>
+            <input type="submit" name="submit" value="отправить" class="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-border"></div>
+
+      <div class="footer-content">
+        <div class="email">
+          <a href="http://" style="display: block">info@atyraumusiccommunity.com</a>
+        </div>
+        <div class="logo">ATYRAU MUSIC COMMUNITY</div>
+        <div class="social-media">
+          <div class="item">
+            <a href="#"><img src="src/img/spotify.svg" alt="spotify" /></a>
+          </div>
+          <div class="item">
+            <a href="https://t.me/atyraumusiccommunity"><img src="src/img/telegram.svg" alt="telegram" /></a>
+          </div>
+          <div class="item">
+            <a href="https://www.instagram.com/atyraumusiccommunity/"><img src="src/img/instagram.svg" alt="instagram" style="top: 20%"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="gitlink">
+    <div class="container">
+      <div class="gitlink-content">
+        
+        <a href="https://github.com/ZhekaGila" class="gitlink-item">
+          <img src="src/img/authors/kagawa.jpg" alt="" class="gitlink-img">
+        </a>
+        <a href="https://github.com/eduardovichmsc" class="gitlink-item">
+          <img src="src/img/authors/azusa.jfif" alt="" class="gitlink-img">
+        </a>
+
+      </div>
+    </div>
+  </div>
+  
+  <button class="scroll-top-btn">↑</button>
+
+  <script src="src/js/jquery-3.6.4.min.js"></script>
+  <script src="src/js/flickity.pkgd.min.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>
