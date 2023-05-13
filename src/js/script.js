@@ -155,6 +155,7 @@ let mobileVisible = false;
 showMenu.addEventListener("click", (e) => {
   if (!mobileVisible) {
     navMenu.classList.add("active");
+    navMenu.classList.add("show");
     mobileVisible = true;
 
     document.querySelector('#mobileGallery').addEventListener('click', (e)=> {

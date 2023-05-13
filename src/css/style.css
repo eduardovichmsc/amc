@@ -244,12 +244,16 @@ header .nav {
 
   transition: all 0.1s;
   opacity: 0;
+  display: none;
 }
 
 .menu.active {
-  opacity: 1;
+  display: flex;
 }
 
+.menu.show {
+  opacity: 1;
+}
 .menu .content {
   display: flex;
   flex-direction: column;
