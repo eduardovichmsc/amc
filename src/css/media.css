@@ -660,6 +660,15 @@
     width: 100%;
   }
 
+
+  .demo {
+    padding: 0 10px;  
+  }
+
+  .demo-form {
+    width: 100%;
+  }
+
   .footer-border {
     height: 1%;
     animation: none;
