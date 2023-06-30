@@ -614,6 +614,10 @@
   .mobile-nav {
     display: flex;
   }
+
+  .title-content {
+    width: 52%;  
+  }
   
   .title-content h1 {
     font-size: 25px;
